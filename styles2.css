@@ -165,16 +165,16 @@ body {
       color: white;
     }
 
-    @media ( max-width:500px){
-      body{
-        color:blue;
+    @media screen and ( max-width:500px){
+      ul a{width: 200px;
+        float: left;
       }
     }
-    @media (orientation: landscape){
-      .title{
-        color:aqua;
+    @media screen and (max-width:500px){
+      .container{ float: left;
+      display: table-row;}
       }
-    }
+    
     .icon-bar  {
       position: absolute;
       top: 100px;
@@ -182,7 +182,7 @@ body {
       opacity: 0.5;
       animation-name: bar;
       animation-fill-mode: backwards;
-      animation-duration: 15s;
+      animation-duration: 30s;
       animation-iteration-count: infinite;
     }
     @keyframes bar {

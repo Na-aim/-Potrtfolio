@@ -153,3 +153,13 @@ img {float:left;}
   margin-left: 290px;
 
 }
+@media screen and ( max-width:500px){
+  .body {width: 200px;
+    float: left;
+  }
+}
+@media screen and ( max-width:500px){
+  .iframe {width: 200px;
+    float: left;
+  }
+}
