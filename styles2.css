@@ -1,0 +1,191 @@
+ul {
+    
+    list-style-type: none;
+    
+  
+    margin: 0;
+    
+   
+    padding: 0;
+    
+
+    overflow: hidden;
+    
+    
+    background-color: rgb(225, 0, 255);
+}
+
+li {
+    
+    float: left;
+}
+
+li a {
+    
+    display: block;
+    
+    
+    color: white;
+    
+   
+    text-align: center;
+    
+    
+    padding: 14px 16px;
+    
+
+    text-decoration: none;
+}
+
+li a:hover {
+    
+    background-color: rgb(9, 240, 248);
+}
+
+li a .active {
+    
+    background-color: #111;
+}
+h1,h2,h3,h4,h5,h6{
+  color:red;
+  text-align: center;
+}
+
+p {
+  color:aqua;
+  text-align: center;
+}
+body {
+    background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    img{
+      border-radius: 100px;
+    }
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    .icon-bar {
+      position: fixed;
+      top: 10%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  
+    }
+    
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color:black;
+      font-size: 20px;
+      opacity: 0.5;
+      float: left;
+    }
+    
+    
+    .icon-bar a:hover {
+      background-color: aqua;
+    }
+    
+    .facebook {
+      background:white;
+      color: white;
+    }
+    
+    .twitter {
+      background: white;
+      color: white;
+    }
+    
+    .google {
+      background: white;
+      color: white;
+    }
+    
+    .linkedin {
+      background: white;
+      color: white;
+    }
+    
+    .youtube {
+      background: white;
+      color: white;
+    }
+
+    @media ( max-width:500px){
+      body{
+        color:blue;
+      }
+    }
+    @media (orientation: landscape){
+      .title{
+        color:aqua;
+      }
+    }
+    .icon-bar  {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      opacity: 0.5;
+      animation-name: bar;
+      animation-fill-mode: backwards;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes bar {
+      from {transform: translateX(1700px);}
+      to  {transform: translateX(-400px);}
+    }
