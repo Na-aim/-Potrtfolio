@@ -182,7 +182,7 @@ body {
       opacity: 0.5;
       animation-name: bar;
       animation-fill-mode: backwards;
-      animation-duration: 30s;
+      animation-duration: 40s;
       animation-iteration-count: infinite;
     }
     @keyframes bar {
